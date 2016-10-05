@@ -1,0 +1,20 @@
+<form action="/students" method="POST">
+  <label>First name</label>
+  <input name="first_name" 
+  placeholder=<%= @placeholder_course1 %>
+  type="text"></input>
+  <label>Last name</label>
+  <input
+    name="last_name"
+    placeholder=<%= @placeholder_course2 %>
+    type="text"
+  >
+  </input>
+  <label>Grade level</label>
+  <input name="age" 
+  placeholder=<%= @placeholder_course3 %>
+  type="text"></input>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <button type="submit">Create teacher</button>
+</form>
+
